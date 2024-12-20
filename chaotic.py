@@ -1,11 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Define random number generator
-rng = np.random.default_rng()
 
-# Generate random grid of floating point numbers [0,1]
-grid = rng.random((50, 50))
+# Generate a grid of almost uniform numbers. We need a minute variation to represent the near uniform state of the early universe. 
+grid = np.ones((50, 50))
 
 print(grid)
 
@@ -14,3 +12,4 @@ plt.imshow(grid, cmap="viridis")
 plt.colorbar()
 plt.title("Grid Visualization")
 plt.show()
+
